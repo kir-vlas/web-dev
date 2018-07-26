@@ -1,0 +1,54 @@
+#main{
+	width: 2091px;
+	height: 3500px;
+	background-color: gray;
+}
+
+#header-form{
+	height: 322.54px;
+	background-color: red;
+}
+
+#header{
+	height: 407.51px;
+	background-color: blue;
+}
+
+#table-box{
+	height: 502.54px;
+	width: 1432px;
+	margin: 0 auto;
+	margin-top: -63.64px;
+	background-color: pink;
+}
+
+.graph-box{
+	height: 570px;
+	width: 1432px;
+	margin: 0 auto;
+	margin-top: 60.51px;
+	background-color: orange;
+}
+
+#diagram-box{
+	height: 776px;
+	width: 1432px;
+	background-color: aqua;
+	margin: 0 auto;
+	margin-top: 60.51px;
+}
+
+.rectangle-graph-box{
+	height: 570px;
+	width: 827px;
+	margin-right: 19.5px;
+	background-color: azure;
+	float: inherit;
+}
+
+.circle-graph-box{
+	height: 570px;
+	width: 585px;
+	background-color: coral;
+	float: inherit;
+}
