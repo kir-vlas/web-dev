@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Menu from './menu.js';
 import InputForm from './form.js';
+import Labels from './labels.js';
 import ReactDOM from 'react-dom';
 import { createMuiTheme } from '@material-ui/core/styles';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
@@ -9,7 +10,7 @@ import grey from '@material-ui/core/colors/grey';
 const theme = createMuiTheme({
   palette: {
     primary: {main: '#44B900',},
-    secondary: grey,
+    secondary: {main: '#FFFFFF'},
   },
 });
 
@@ -42,6 +43,7 @@ class App extends Component{
 							</div>
 						</div>
 						<div id="header">
+							<Labels/>
 							<img src="Photo/MaskGroup5.png" class="under"/>
 							<img src="Photo/Rectangle2.png" class="over"/>
 						</div>

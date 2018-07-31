@@ -145,3 +145,25 @@
 	-webkit-justify-content: space-between;
 	font-family: 'Libre Franklin', sans-serif;
 }
+
+#header-labels{
+	z-index: 2;
+	width: 1492px;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-self: center; 
+	align-self: center;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	font-family: 'Libre Franklin', sans-serif;
+	color: white;
+}
+
+.label-head{
+	font-size: 20px;
+}
+
+.label-val{
+	font-size: 40px;
+}
