@@ -5,6 +5,8 @@ import Labels from './labels.js';
 import ReactDOM from 'react-dom';
 import { createMuiTheme } from '@material-ui/core/styles';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import Icon from '@material-ui/core/Icon';
+import AttachMoney from '@material-ui/icons/AttachMoney';
 import grey from '@material-ui/core/colors/grey';
 
 const theme = createMuiTheme({
@@ -30,6 +32,8 @@ class App extends Component{
 					<Menu/>
 				</div>
 				<div id="main-content" style={{width: this.state.isMenuOpened ? 1771 : 2091 }}>
+					<div id="menu-close" onClick={this.toggleState.bind(this)} style={{display: this.state.isMenuOpened ? 'block' : 'none' }}>
+					</div>
 					<div id="header-main">
 						<div id="header-form">
 							<div id="menu-icon" onClick={this.toggleState.bind(this)} style={{display: this.state.isMenuOpened ? 'none' : 'flex' }}>
@@ -38,7 +42,12 @@ class App extends Component{
 								<div class="menu-icon-rect"></div>
 							</div>
 							<div id="form">
-								<span id="text-header">Analytics</span>
+								<div id="form-header">
+									<span id="text-header">Analytics</span>
+									<div id="currency">
+										<AttachMoney color="primary" /> AUD
+									</div>
+								</div>
 								<InputForm/>
 							</div>
 						</div>
