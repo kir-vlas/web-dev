@@ -51,14 +51,12 @@
 	height: 502.54px;
 	width: 1432px;
 	margin-top: -163.64px;
-	background-color: pink;
 	z-index: 1;
 }
 
 .graph-box{
 	height: 570px;
 	width: 1432px;
-	background-color: orange;
 	display: -webkit-flex;
 	justify-content: space-between;
 	-webkit-justify-content: space-between;
@@ -77,13 +75,11 @@
 .rectangle-graph-box{
 	height: 570px;
 	width: 827px;
-	background-color: azure;
 }
 
 .circle-graph-box{
 	height: 570px;
 	width: 585px;
-	background-color: coral;
 }
 
 #menu-content{
@@ -279,4 +275,13 @@
 .bar-value{
 	margin: 0 auto;
 	z-index: 2;
+}
+
+.graph-rectangle-header{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	height: 52px;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16pt;
 }

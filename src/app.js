@@ -3,6 +3,11 @@ import Menu from './menu.js';
 import InputForm from './form.js';
 import Labels from './labels.js';
 import TableBox from './table.js';
+import GraphFirst from './graphF.js';
+import GraphSecond from './graphS.js';
+import GraphThird from './graphT.js';
+import GraphFourth from './graphFo.js';
+import GraphFifth from './graphFi.js';
 import ReactDOM from 'react-dom';
 import { createMuiTheme } from '@material-ui/core/styles';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
@@ -65,17 +70,22 @@ class App extends Component{
 					</div>
 					<div class="graph-box">
 						<div class="rectangle-graph-box">
+							<GraphFirst/>
 						</div>
 						<div class="circle-graph-box">
+							<GraphSecond/>
 						</div>
 					</div>
 					<div class="graph-box">
 						<div class="circle-graph-box">
+							<GraphThird/>
 						</div>
 						<div class="rectangle-graph-box">
+							<GraphFourth/>
 						</div>
 					</div>
 					<div id="diagram-box">
+						<GraphFifth/>
 					</div>
 				</div>
 			</div>
