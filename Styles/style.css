@@ -247,3 +247,36 @@
 	width: 1800px;
 	height: 3500px;
 }
+
+#table-header{
+	height: 40px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	font-family: 'Libre Franklin', sans-serif;
+	justify-content: space-between;
+}
+
+#table-main{
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16pt;
+}
+
+.table-bar{
+	width:100px;
+	height: 25px;
+	background-color: #BBBBBB;
+	position: absolute;
+}
+
+.table-show-bar{
+	height: 25px;
+	background-color: orange;
+	position: absolute;
+}
+
+.bar-value{
+	margin: 0 auto;
+	z-index: 2;
+}

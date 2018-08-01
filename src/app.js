@@ -2,12 +2,15 @@ import React, {Component} from 'react';
 import Menu from './menu.js';
 import InputForm from './form.js';
 import Labels from './labels.js';
+import TableBox from './table.js';
 import ReactDOM from 'react-dom';
 import { createMuiTheme } from '@material-ui/core/styles';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import Icon from '@material-ui/core/Icon';
 import AttachMoney from '@material-ui/icons/AttachMoney';
 import grey from '@material-ui/core/colors/grey';
+import createTypography from '@material-ui/core/styles/createTypography';
+import createPalette from '@material-ui/core/styles/createPalette';
 
 const theme = createMuiTheme({
   palette: {
@@ -58,6 +61,7 @@ class App extends Component{
 						</div>
 					</div>
 					<div id="table-box">
+						<TableBox />
 					</div>
 					<div class="graph-box">
 						<div class="rectangle-graph-box">
