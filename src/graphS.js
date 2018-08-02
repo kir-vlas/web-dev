@@ -10,7 +10,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     maxWidth: 585,
-    maxHeight: 570,
+    maxHeight: 600,
     padding: theme.spacing.unit * 2,
   },
    rightIcon: {
@@ -37,15 +37,22 @@ class GraphSecond extends Component{
         	}],
     	};
     	this.options = {
-    		maintainAspectRatio: false
+    		maintainAspectRatio: false,
     	}
 		const { classes } = this.props;
 		return(
 				<Paper className={classes.root}>
 					<div class="graph-rectangle-header">
-						<span>CHANNEL SPLIT</span>
-						<Info className={classes.rightIcon} />
-					</div>
+                        <div>
+                            CHANNEL SPLIT
+                            <Info className={classes.rightIcon} />
+                        </div>
+                        <div class="graph-select-box">
+                            <select class="select-graph">
+                                <option>Conversions</option>
+                            </select>
+                        </div>
+                    </div>
 					<Doughnut height={380} data={this.data} options={this.options} />
 				</Paper>
 			)

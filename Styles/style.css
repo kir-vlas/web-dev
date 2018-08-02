@@ -284,4 +284,19 @@
 	height: 52px;
 	font-family: 'Libre Franklin', sans-serif;
 	font-size: 16pt;
+	justify-content: space-between;
+	
+}
+
+.graph-select-box{
+
+}
+
+.select-graph{
+	font-family: 'Libre Franklin', sans-serif;
+	border-radius: 20px;
+	height: 30px;
+	width: 120px;
+	border-color: #44B900;
+	color: #44B900;
 }

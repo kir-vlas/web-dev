@@ -50,7 +50,6 @@ class GraphFifth extends Component{
         	}]
     	};
     	this.options = {
-    		maintainAspectRatio: false,
             responsive: true,
             labels: [" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "],
             tooltips: {
@@ -106,10 +105,17 @@ class GraphFifth extends Component{
 		return(
 				<Paper className={classes.root}>
 					<div class="graph-rectangle-header">
-						<span>CHANNEL PERFORMANCE</span>
-						<Info className={classes.rightIcon} />
-					</div>
-					<Bar height={350} data={this.data} options={this.options} />
+                        <div>
+                            CHANNEL PERFORMANCE
+                            <Info className={classes.rightIcon} />
+                        </div>
+                        <div class="graph-select-box">
+                            <select class="select-graph">
+                                <option>Conversions</option>
+                            </select>
+                        </div>
+                    </div>
+					<Bar data={this.data} options={this.options} />
 				</Paper>
 			)
 	}

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import TextField from '@material-ui/core/TextField';
 import MoveToInbox from '@material-ui/icons/MoveToInbox';
+import CalendarToday from '@material-ui/icons/CalendarToday';
 import Icon from '@material-ui/core/Icon';
 import Button from '@material-ui/core/Button';
 import Input from '@material-ui/core/Input';
@@ -9,7 +10,9 @@ import Checkbox from '@material-ui/core/Checkbox';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import green from '@material-ui/core/colors/green';
+import grey from '@material-ui/core/colors/grey';
 import PropTypes from 'prop-types';
+import InputAdornment from '@material-ui/core/InputAdornment';
 
 const styles = theme => ({
   	leftIcon: {
@@ -57,7 +60,14 @@ class InputForm extends Component{
 					<TextField style={{width: 290}} select label="Australia Hearing"/>
 					<TextField style={{width: 290}} select label="All campaigns"/>
 					<TextField style={{width: 290}} select label="All layers"/>
-					<Input style={{width: 290}} type="date"/>
+					<TextField style={{width: 290}} label="All layers" InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <CalendarToday color="grey"/>
+            </InputAdornment>
+          ),
+        }}/>
+          
 				</div>
 				<FormGroup style={{width: 290,'float':'left'}}>
 				<FormControlLabel 

@@ -10,7 +10,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     maxWidth: 827,
-    maxHeight: 570,
+    maxHeight: 600,
     padding: theme.spacing.unit * 2,
   },
    rightIcon: {
@@ -51,8 +51,15 @@ class GraphFirst extends Component{
 		return(
 				<Paper className={classes.root}>
 					<div class="graph-rectangle-header">
-						<span>CHANNEL PERFORMANCE</span>
-						<Info className={classes.rightIcon} />
+						<div>
+							CHANNEL PERFORMANCE
+							<Info className={classes.rightIcon} />
+						</div>
+						<div class="graph-select-box">
+							<select class="select-graph">
+								<option>Conversions</option>
+							</select>
+						</div>
 					</div>
 					<HorizontalBar height={380} data={this.data} options={this.options} />
 				</Paper>
